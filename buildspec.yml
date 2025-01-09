@@ -1,5 +1,4 @@
 version: 0.2
-
 phases:
 install:
   commands:
@@ -16,4 +15,4 @@ post_build:
 
 artifacts:
   files:
-     -"**/**" # specify the file you want to store as an artifact
+     -"**/*" # specify the file you want to store as an artifact
