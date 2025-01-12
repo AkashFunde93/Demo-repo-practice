@@ -6,10 +6,10 @@ files:
   - source: appspec.yml
     destination: /usr/share/nginx/html/
   - source: scripts/setup_nginx.sh
-    destination: /home/ubuntu/scripts/setup_nginx.sh  # Ensure this path is correct
+    destination: /home/ubuntu/scripts/setup_nginx.sh
 
 hooks:
   AfterInstall:
-    - location: scripts/setup_nginx.sh  # Reference just the relative path
+    - location: scripts/setup_nginx.sh
       timeout: 300
       runas: root
